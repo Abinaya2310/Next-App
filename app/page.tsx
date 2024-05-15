@@ -1,7 +1,7 @@
 
 import { Session } from "inspector"
 import { signIn, useSession } from "next-auth/react"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
 import { FcGoogle } from "react-icons/fc"
 
 
@@ -26,9 +26,7 @@ if(Session){
    <button onClick={()=>{
 signIn("google")
    }}><FcGoogle/>g</button> 
-    
     <a href ="/login">Login</a>
     </> 
   )
 }
-
